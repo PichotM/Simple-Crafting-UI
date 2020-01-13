@@ -1,0 +1,19 @@
+{
+    "include": [
+        "**/*"
+    ],
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "es6"
+        ],
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "target": "es5",
+        "jsx": "react",
+        "allowJs": true,
+        "removeComments": true    
+    }
+}

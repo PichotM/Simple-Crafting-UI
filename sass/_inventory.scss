@@ -1,0 +1,133 @@
+#inventory {
+    width: 50%;
+    height: 59.7%;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+
+    margin: auto;
+    padding-top: 20vh;
+    &.hide {
+        display: none;
+    }
+
+    .inventory-list {
+        width: 75%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: opacity 0.3s;
+        // border-left: solid black 1px;
+        // background-color: #fff;
+    }
+    .hint-list {
+        position: relative;
+        width: 40%;
+        margin-left: 4px;
+        height: 35%;
+        transition: opacity 0.3s;
+        background-color: rgba(0, 0, 0, 0.5);
+        .hint-buttons {
+            position: absolute;
+            bottom: 22px;
+            width: 100%;
+            right: 0;
+            height: 2vh;
+            float: right;
+            .hint-button {
+                width: 9vh;
+                line-height: 32px;
+                display: inline-block;
+                text-align: center;
+                border-width: 1px;
+                font-size: 1.2vh;
+                border-style: solid;
+                border-color: rgba(8, 8, 8, 0.63);
+                color: rgba(255, 255, 255, 0.753);
+                background-color: rgba(196, 194, 194, 0.5);
+                margin-left: 6px;
+                &:hover {
+                    background-color: rgba(210, 210, 210, 0.5);
+                }
+            }
+        }
+        .ingredients-list {
+            padding-left: 22px;
+            padding-top: 6px;
+            .ingredient {
+                color: rgba(255, 255, 255, 0.685);
+                font-size: 1.2vh;
+            }
+        }
+    }
+
+    .item-list {
+        width: 100%;
+        height: 74.5%;
+        // overflow-y: scroll;
+        transition: background 0.3s;
+    }
+    .item-list-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 1vh 1vh;
+        height: 3vh;
+        .title {
+            color: rgba(255, 255, 255, 0.685);
+            font-size: 1.2vh;
+        }
+    }
+    .item-list-search {
+        height: 4vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.548);
+        padding-left: 1px;
+        padding-right: 1px;
+        margin-bottom: 1px;
+        .searchInput {
+            width: 80%;
+            height: 100%;
+            padding-left: 4px;
+        }
+        .searchButton {
+            width: 20%;
+            height: 100%;
+        }
+    }
+    .item {
+        display: flex;
+        //background-color: rgba(0, 0, 0, 0.397);
+	    background: linear-gradient(to left, rgba(0, 0, 0, 0.1), 20%, rgba(0, 0, 0, 0.8) 100%);
+        margin-top: 0.1vh;
+        height: 4.1vh;
+        justify-content: space-between;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        &.blocked {
+            background-color: rgba(124, 2, 2, 0.397);
+            &:hover {
+                background-color: rgba(124, 2, 2, 0.5);
+            }
+        }
+        &:hover {
+            background-color: rgba(34, 34, 34, 0.397);
+        }
+        .item-desc {
+            width: 50%;
+            padding: 1vh 1vh;
+            .name {
+                font-size: 1.5vh;
+                color: rgb(206, 206, 206);
+            }
+        }
+        .item-right {
+            color: white;
+            font-size: 3vh;
+            font-weight: 10;
+            float: right;
+            padding-right: 16px;
+            padding-top: 3px;
+            top: 0;
+        }
+    }
+}
