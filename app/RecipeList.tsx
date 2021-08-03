@@ -19,7 +19,8 @@ class RecipeList extends Component<any, any> {
     }
 
     canSeeRecipe(recipeData) {
-        if (recipeData.workbench !== this.props.workbench) return false;
+        if (recipeData.workbench && recipeData.workbench !== this.props.workbench) return false;
+
         return true
     }
 

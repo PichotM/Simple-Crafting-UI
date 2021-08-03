@@ -1,10 +1,7 @@
 import { SET_RECIPES, SELECT_RECIPE, TOGGLE_MENU, SET_INVENTORY, SET_WORKBENCH } from './action'
 
 const defaultEditorState = {
-    recipes : [
-        { name : "Trousse de soin", ingredients : [] },
-        { name : "Bandage", ingredients : []  },
-    ],
+    recipes : [],
     recipeInfo : {},
     open : false,
     inventory : {},
